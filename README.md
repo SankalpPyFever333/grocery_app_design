@@ -3,6 +3,7 @@
 A new Flutter project.
 
 ## Screenshots
-![App Screenshot]()
+![App Screenshot](https://github.com/SankalpPyFever333/grocery_app_design/blob/main/assets/homePage.png)
+![App Screenshot](https://github.com/SankalpPyFever333/grocery_app_design/blob/main/assets/landinPage.png)
 
 
