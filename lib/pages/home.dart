@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app_design/pages/detailprodpage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -158,17 +159,25 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 10,
                         ),
-                        Container(
-                          margin: EdgeInsets.only(left: 115),
-                          padding:
-                              EdgeInsets.symmetric(vertical: 5, horizontal: 3),
-                          decoration: BoxDecoration(
-                              color: Color(0xffffeab5),
-                              borderRadius: BorderRadius.circular(10)),
-                          child: Icon(
-                            Icons.add,
-                            color: const Color.fromARGB(227, 240, 158, 34),
-                            size: 30,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ProductDetail()));
+                          },
+                          child: Container(
+                            margin: EdgeInsets.only(left: 115),
+                            padding: EdgeInsets.symmetric(
+                                vertical: 5, horizontal: 3),
+                            decoration: BoxDecoration(
+                                color: Color(0xffffeab5),
+                                borderRadius: BorderRadius.circular(10)),
+                            child: Icon(
+                              Icons.add,
+                              color: const Color.fromARGB(227, 240, 158, 34),
+                              size: 30,
+                            ),
                           ),
                         )
                       ],
